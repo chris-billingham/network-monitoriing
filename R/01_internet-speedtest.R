@@ -30,7 +30,7 @@ new <- dplyr::bind_rows(old, st_df)
 
 # save data
 logger::log_info("saving with new data")
-savRDS(new, "data/speedtest.rds")
+saveRDS(new, "data/speedtest.rds")
 
 # fin
 logger::log_success("#fin")
